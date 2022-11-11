@@ -3,7 +3,7 @@ def score_to_letter_grade(grade):   #this function return a grade according to s
         return "A"
     elif grade >= 87:   #if score in greater or equals to 87 return B+
         return "B+"
-    elif grade == 80:   #if score in greater or equals to 80 return B
+    elif grade >= 80:   #if score in greater or equals to 80 return B
         return "B"
     elif grade >= 77:
         return "C+"
@@ -13,7 +13,7 @@ def score_to_letter_grade(grade):   #this function return a grade according to s
         return "D+"
     elif grade >= 60:
         return "D"
-    else
+    else:
         return "F"  #otherwise return F 
 
 print("Grade of 90 should be A: " + score_to_letter_grade(90))  #call score_to_letter_grade function and print output 
